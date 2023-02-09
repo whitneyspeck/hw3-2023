@@ -1,0 +1,142 @@
+body{
+   /* Set line spacing */
+   line-height: 2;
+   margin: 2%;
+}
+
+
+header, nav{
+    /* Set padding and margin */
+    padding: 10px 20px 50px 20px;
+    margin: 2%;
+
+}
+nav ul li{
+    /* Set display, margin, padding, font-size, background-color */
+    font-size: 200%;
+    padding: 30px;
+    margin: 9%;
+    background-color: antiquewhite;
+    display: inline-block;
+    /* font-weight: bold; */
+
+}
+
+nav a{
+    /* Set text decoration*/
+    color: black;
+    text-decoration: none;
+}
+
+a:visited{
+    /* Set color */
+    color: black;
+
+}
+
+nav a.current{
+    /* Set text decoration, transformation, and underline properties */
+    text-transform: uppercase;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: black;
+    text-underline-offset: 20px;
+}
+
+
+h1{
+   /*Set font and font size*/
+   font-size: 500%;
+   font-family: Merriweather, Anton, 'Times New Roman', Nunito;
+
+}
+
+h2{
+    font-size: 400%;
+    font-family: Anton, 'Times New Roman', Nunito;
+    text-align: center;
+    line-height: 120%;
+    /* display center */
+}
+
+h3{
+    /*Set font size*/
+    font-size: 300%;
+
+}
+
+h1, h2, h3{
+    /*Set margin */
+    margin: 2vh;
+
+}
+.grid{
+    /*Set width, margin, border properties, background color, and grid properties */
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    width: 90%;
+    margin: 5%;
+    justify-content: space-between;
+    justify-items: center;
+    /* justify-self: center; */
+    border-radius: 20px;
+    grid-row-gap: 10px;
+    background-color: lightslategray;
+}
+
+.grid div{
+    /* Set border properties, padding, and background color */
+    border: solid 2px black;
+    border-radius: 20px;
+    background-color: white;
+    padding: 20px;
+}
+
+.grid img{
+    /* Set width, margin, and display */
+    width: 90%;
+    place-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* text-align: center; */
+}
+
+
+.grid div:nth-child(3n+1)  {
+    /* Set box shadow */
+    box-shadow: 10px 0px 10px rgb(250, 235, 215, 0.5);
+    }
+
+.grid div:nth-child(3n)  {
+    /* Set box shadow */ 
+    box-shadow: -10px 0px 10px rgb(250, 235, 215, 0.5);
+
+}
+
+.grid div:nth-child(3n+2)  {
+     /* Set box shadow */
+     box-shadow: 0px 0px 10px 0px rgb(250, 235, 215, 0.5), 0px 0px 10px 8px rgb(250, 235, 215, 0.5);
+     /* box-shadow: 0px 0px 10px rgb(250, 235, 215, 0.5); */
+     /* clip-path: inset(0px 10px 0px); */
+}
+    
+
+p + p {
+     /* Set indentation */
+     text-indent: 40px;
+  }
+  
+p{
+     /* Set margin */
+     margin-top: 1vh;
+}
+
+
+.grid ul li{
+    /* Set margin, line-spacing, list styling  */
+    line-height: 1;
+    list-style-image: url('../images/sketchbook.png');
+    margin-left: 15%;
+    margin-bottom: 2vh;
+}
